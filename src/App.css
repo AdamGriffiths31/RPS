@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,19 +9,50 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ .App-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  min-height: 100vh;
+  background-color: grey;
+  font-size: 40px;
 
-.App-link {
-  color: #61dafb;
+} 
+.Scoreboard{
+margin:20px;
+border:5px solid white;
+width: 200px;
+height: 75px;
+position: relative;
+font-size: 50px;
+
+}
+.BadgeUser{
+color: white;
+position: absolute;
+top: 20px;
+left: -20px;
+background-color: red;
+font-size: 25px;
+}
+.BadgeComputer{
+color: white;
+position: absolute;
+top: 20px;
+right: -30px;
+background-color: red;
+font-size: 25px;
+  }
+.Options{
+text-align: center;
+}
+.IndividualOption{
+  border:3px solid white;
+  display: inline-block;
+  margin:20px 50px;
+  border-radius: 50%;
+  padding: 5px;
+
 }
 
 @keyframes App-logo-spin {
